@@ -1,0 +1,21 @@
+A Dockerized Node.js and Express backend API for managing tour event data, connected to a MongoDB database. This project provides RESTful endpoints to create, read, update, and delete events, making it ideal for event listing web applications.
+
+Features Fully containerized backend with Node.js and MongoDB
+
+REST API for CRUD operations on tour events
+
+Seed script to populate the MongoDB database with initial events
+
+Uses Docker Compose to run MongoDB and the backend service together seamlessly
+
+Easy to build, deploy, and run anywhere with Docker
+
+How to Run Pull the image from Docker Hub:
+
+docker pull dacodablakheart/ali_siddiq:latest Run the container exposing port 3000:
+
+docker run -p 3000:3000 dacodablakheart/ali_siddiq:latest Access the API at http://localhost:3000/api/events⁠
+
+To run with MongoDB using Docker Compose, clone the repository and run:
+
+docker-compose up

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Manage Tour Events</h1>
+
+  <form id="eventForm">
+    <input type="text" id="date" placeholder="Date (YYYY-MM-DD)" required>
+    <input type="text" id="time" placeholder="Time (e.g. 8:00 PM)" required>
+    <input type="text" id="city" placeholder="City, State" required>
+    <input type="text" id="venue" placeholder="Venue" required>
+    <input type="url" id="ticket_url" placeholder="Ticket URL" required>
+    <button type="submit">Add Event</button>
+  </form>
+
+  <h2>All Events</h2>
+  <div id="eventsContainer"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
